@@ -1,4 +1,4 @@
-requirements-dev.txtWITH_ENV = env `cat .env 2>/dev/null | xargs`
+WITH_ENV = env `cat .env 2>/dev/null | xargs`
 
 compile-deps:
 	@[ -n "$(VIRTUAL_ENV)" ] || (echo 'out of virtualenv'; exit 1)
